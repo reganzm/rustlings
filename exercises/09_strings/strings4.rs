@@ -32,7 +32,7 @@ fn main() {
 
     string_slice("  hello there ".trim());
 
-    string_slice("Happy Monday!".replace("Mon", "Tues"));
+    string("Happy Monday!".replace("Mon", "Tues"));
 
     string_slice("mY sHiFt KeY iS sTiCkY".to_lowercase());
 }
