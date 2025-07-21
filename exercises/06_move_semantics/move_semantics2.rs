@@ -1,5 +1,5 @@
 fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
-    let mut vec = vec;
+    let mut vec = vec.clone();
 
     vec.push(88);
 
