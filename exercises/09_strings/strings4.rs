@@ -34,5 +34,5 @@ fn main() {
 
     string("Happy Monday!".replace("Mon", "Tues"));
 
-    string_slice("mY sHiFt KeY iS sTiCkY".to_lowercase());
+    string("mY sHiFt KeY iS sTiCkY".to_lowercase());
 }
