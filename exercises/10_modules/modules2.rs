@@ -15,6 +15,9 @@ mod delicious_snacks {
         pub const CUCUMBER: &str = "Cucumber";
         pub const CARROT: &str = "Carrot";
     }
+
+    use self::fruits::PEAR as fruit;
+    use self::veggies::CUCUMBER as veggie;
 }
 
 fn main() {
