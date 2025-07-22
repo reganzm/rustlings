@@ -43,6 +43,11 @@ impl From<&str> for Person {
         if name.is_empty() {
             return Self::default();
         }
+        // 如果parts[1]为非数字，返回Self::default();
+        if parts[1].trim().is_empty() || !parts[1].trim().chars().all(char::is_numeric) {
+            return Self::default();
+        }
+
         let age = parts[1].parse::<u8>().unwrap_or_default();
         Self { name, age }
     }
