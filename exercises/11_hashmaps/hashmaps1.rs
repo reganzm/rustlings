@@ -15,7 +15,7 @@ fn fruit_basket() -> HashMap<String, u32> {
     basket.insert(String::from("banana"), 2);
 
     // TODO: Put more fruits in your basket.
-    bananast.insert(String::from("apple"), 3);
+    basket.insert(String::from("apple"), 3);
     basket.insert(String::from("orange"), 1);
     basket.insert(String::from("kiwi"), 1);
     basket.insert(String::from("grape"), 1);
