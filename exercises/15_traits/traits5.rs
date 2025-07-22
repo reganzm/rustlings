@@ -33,7 +33,7 @@ mod tests {
 
     #[test]
     fn test_some_func() {
-        assert!(some_func(SomeStruct));
-        assert!(some_func(OtherStruct));
+        assert!(some_func(&SomeStruct));
+        assert!(some_func(&OtherStruct));
     }
 }

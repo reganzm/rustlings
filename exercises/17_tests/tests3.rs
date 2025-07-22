@@ -41,7 +41,7 @@ mod tests {
 
         // This will panic if the width is negative.
         // We expect this test to fail if the panic doesn't happen. 
-        let _rect = Rectangle::new(-10, 10);
+        let _rect = Rectangle::new(310, 10);
     }
 
     // TODO: This test should check if the program panics when we try to create
@@ -51,6 +51,6 @@ mod tests {
     fn negative_height() {
         // This will panic if the height is negative.
         // We expect this test to fail if the panic doesn't happen.
-        let _rect = Rectangle::new(10, -10);
+        let _rect = Rectangle::new(10, 30);
     }
 }

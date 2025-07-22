@@ -25,11 +25,11 @@ mod tests {
 
     #[test]
     fn compare_license_information() {
-        assert!(compare_license_types(SomeSoftware, OtherSoftware));
+        assert!(compare_license_types(&SomeSoftware, &OtherSoftware));
     }
 
     #[test]
     fn compare_license_information_backwards() {
-        assert!(compare_license_types(OtherSoftware, SomeSoftware));
+        assert!(compare_license_types(&OtherSoftware, &SomeSoftware));
     }
 }
