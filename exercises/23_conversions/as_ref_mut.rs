@@ -25,7 +25,7 @@ fn num_sq<T: AsMut<u32>>(arg: &mut T) {
     // TODO: Implement the function body.
     // `arg` should implement `AsMut<u32>` to allow conversion to a mutable reference.
     // This allows us to modify the value in place.
-    *arg.as_mut() *= 2;
+    *arg.as_mut() = *arg.as_mut() * *arg.as_mut();
 }
 
 fn main() {
