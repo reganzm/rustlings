@@ -5,7 +5,10 @@
 fn average(values: &[f64]) -> f64 {
     let total = values.iter().sum::<f64>();
     // TODO: Make a conversion before dividing.
-    total / values.len()
+    // The `as` operator is used to convert the length of the slice to `f64`.
+    // This is necessary because `values.len()` returns a `usize`, which cannot
+    // be directly used in floating-point division.
+    total / values.len() as f64
 }
 
 fn main() {

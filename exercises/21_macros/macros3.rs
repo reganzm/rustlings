@@ -6,6 +6,7 @@ mod macros {
             println!("Check out my macro!");
         };
     }
+    use super::my_macro;
 }
 
 fn main() {

@@ -6,7 +6,13 @@
 
 fn main() {
     // TODO: Fix the Clippy lint in this line.
-    let pi = 3.14;
+    // Clippy suggests using `f32::consts::PI` instead of a hardcoded value.
+    // You can also use `std::f32::consts::PI` or `
+    // `std::f32::consts::PI` to access the constant.
+    // The radius is also hardcoded, so you can use a variable instead.
+    // Clippy will suggest using `f32::powi` instead of `f32::pow`.
+    // The area of a circle is calculated using the formula `π * r^2`.
+    let pi = std::f32::consts::PI;
     let radius: f32 = 5.0;
 
     let area = pi * radius.powi(2);
